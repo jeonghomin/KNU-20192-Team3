@@ -15,7 +15,7 @@ using namespace std;
 // Kinect for Windows SDK Header
 
 
-const   string  get_name(int n);    //判斷關節的名字
+const   string  get_name(int n);   
 int main(void)
 {
 	string filePath = "non_person.txt";
