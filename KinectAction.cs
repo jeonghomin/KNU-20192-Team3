@@ -4,8 +4,8 @@ using System.Runtime.InteropServices;
 
 public class KinectAction : MonoBehaviour
 {
-    [DllImport("NtKinectDll")] private static extern System.IntPtr getKinect();
-    [DllImport("NtKinectDll")] private static extern int setSkeleton(System.IntPtr kinect, System.IntPtr data, System.IntPtr state, System.IntPtr id);
+    [DllImport("KinectDll")] private static extern System.IntPtr getKinect();
+    [DllImport("KinectDll")] private static extern int setSkeleton(System.IntPtr kinect, System.IntPtr data, System.IntPtr state, System.IntPtr id);
 
     private System.IntPtr kinect;
     int bodyCount = 6;
